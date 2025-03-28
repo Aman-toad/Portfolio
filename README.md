@@ -1,12 +1,48 @@
-# React + Vite
+#Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built using React and deployed on GitHub Pages.
 
-Currently, two official plugins are available:
+🚀 Features :-
+🏠 Homepage: Showcases an introduction about me.
+💼 Projects: Displays my featured projects with descriptions and links.
+📜 Resume: Provides access to my resume.
+📞 Contact: Includes ways to reach out to me.
+🎨 Responsive Design: Works on both desktop and mobile devices.
+🌙 Dark/Light Mode: Toggle between themes for better accessibility.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+🛠️ Technologies Used
+React.js
+Tailwind CSS
+GitHub Pages (for deployment)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📂 Project Structure
+
+/portfolio
+│── src
+│   ├── components  # Reusable UI components
+│   ├── pages       # Different sections of the portfolio
+│   ├── assets      # Images, icons, and other static assets
+│   ├── App.js      # Main app structure
+│   ├── index.js    # Entry point
+│── public         # Static files
+│── package.json   # Dependencies and scripts
+│── README.md      # Project documentation
+
+🚀 Deployment
+The portfolio is deployed using GitHub Pages.
+To deploy updates:
+
+git add .
+git commit -m "Updated portfolio"
+git push origin main
+yarn deploy # If using gh-pages
+
+📬 Contact
+Feel free to reach out to me:
+📧 Email: [amanaspirantsingh@gmail.com]
+
+🌐 Portfolio: [https://aman-toad.github.io/Portfolio/]
+
+
+Thank you for visiting my portfolio! 🚀
