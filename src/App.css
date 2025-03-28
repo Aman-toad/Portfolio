@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+.left-animation-text {
+  animation: motion-left 0.8s ease-out forwards;
+}
+
+.right-animation-text {
+  animation: motion-right 0.8s ease-out forwards;
+}
+
+@keyframes motion-right {
+  0% {
+    opacity: 0;
+    translate: 40px;
+  }
+
+  25% {
+    opacity: 0.25;
+    translate: 20px;
+  }
+
+  50% {
+    opacity: 0.5;
+    translate: 10px;
+  }
+
+  100% {
+    opacity: 1;
+    translate: 0px;
+  }
+}
+
+@keyframes motion-left {
+  0% {
+    opacity: 0;
+    translate: -40px;
+  }
+
+  25% {
+    opacity: 0.25;
+    translate: -20px;
+  }
+
+  50% {
+    opacity: 0.5;
+    translate: -10px;
+  }
+
+  100% {
+    opacity: 1;
+    translate: 0px;
+  }
+}
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes motioning-right {
+  from{
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes motioning-left {
+  from{
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes motioning-up {
+  from{
+    opacity: 0;
+    scale: 0.6;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.heading{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover;
+}
+
+.content-right{
+  animation: motioning-right linear;
+  animation-timeline: view();
+  animation-range: entry 0 ;
+}
+
+.content-left{
+  animation: motioning-left linear;
+  animation-timeline: view();
+  animation-range: entry 0 ;
+}
+
+.content-up{
+  animation: motioning-up linear;
+  animation-timeline: view();
+  animation-range: entry 0 ;
+}
