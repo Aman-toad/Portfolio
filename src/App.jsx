@@ -2,7 +2,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 import ContactForm from "./contact";
 import './App.css'
-import { Menu, Code, Briefcase, User, Home, Computer, Phone, Smartphone, Zap, ChartColumnIncreasing, Database, TwitterIcon, LinkedinIcon, InstagramIcon, MapPin, Mail, Sun, Moon, Download, } from "lucide-react"
+import { Menu, Code, Briefcase, User, Home, Computer, Phone, Smartphone, Zap, ChartColumnIncreasing, Database, TwitterIcon, LinkedinIcon, InstagramIcon, MapPin, Mail, Sun, Moon, Download, Eye, Github, } from "lucide-react"
 import { useEffect, useState } from "react";
 
 import profile from './Assets/profile.jpg';
@@ -167,10 +167,10 @@ export default function Portfolio() {
               <div className="right-animation-text md:w-1/2 relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary mx-auto">
                   <img src={profile}
-                  alt="Profile"
-                  width={400}
-                  height={400}
-                  className="w-full h-full object-cover"
+                    alt="Profile"
+                    width={400}
+                    height={400}
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
@@ -189,12 +189,12 @@ export default function Portfolio() {
             <div className="content-right grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                src={DistImage}
-                alt="About Me"
-                width={500}
-                height={600}
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
+                  src={DistImage}
+                  alt="About Me"
+                  width={500}
+                  height={600}
+                  className="rounded-lg shadow-lg w-full h-auto"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Who I Am</h3>
@@ -215,7 +215,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white">Email:</h4>
-                    <p className="text-gray-600 dark:text-gray-300">amanfalse@gmail.com</p>
+                    <p className="text-gray-600 dark:text-gray-300">amancrafts.dev@gmail.com</p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white">Location:</h4>
@@ -226,15 +226,32 @@ export default function Portfolio() {
                     <p className="text-gray-600 dark:text-gray-300">Part-Time</p>
                   </div>
                 </div>
-                <button className="bg-sky-400 p-2 duration-300 ease-in hover:scale-105 transition-transform-colors rounded-xl">
-                  <a
-                    href="#contact"
-                    className="bg-primary text-white font-medium rounded-md hover:bg-primary/90 flex items-center gap-1.5"
-                  >
-                    <Download className="h-6 w-6" />
-                    Download Resume
-                  </a>
-                </button>
+                <div className="gap-5 flex">
+                  <button className="bg-sky-400 p-2 duration-300 ease-in hover:scale-105 transition-transform-colors rounded-xl">
+                    <a
+                      href="/Aman_Resume.pdf"
+                      download="Aman_Resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-primary text-white font-medium rounded-md hover:bg-primary/90 flex items-center gap-1.5"
+                    >
+                      <Download className="h-6 w-6" />
+                      Download Resume
+                    </a>
+                  </button>
+
+                  <button className="bg-sky-400 p-2 duration-300 ease-in hover:scale-105 transition-transform-colors rounded-xl">
+                    <a
+                      href="/Aman_Resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-primary text-white font-medium rounded-md hover:bg-primary/90 flex items-center gap-1.5"
+                    >
+                      <Eye className="h-6 w-6" />
+                      View Resume
+                    </a>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -252,7 +269,7 @@ export default function Portfolio() {
               {/* Project 1 */}
               <div className="content-right bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
                 <div className="relative h-60">
-                  <img src={anisphere}alt="Project 1" fill className="object-cover" />
+                  <img src={anisphere} alt="Project 1" fill className="object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Anime Website</h3>
@@ -376,9 +393,9 @@ export default function Portfolio() {
                 <div className="w-16 h-16 bg-primary/10 text-primary rounded-full flex items-center justify-center mx-auto mb-6">
                   <Smartphone className='h-8 w-8 text-white' />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Mobile Development</h3>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">WordPress Website Setup & Costomization</h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Building native and cross-platform mobile applications that provide seamless experiences across devices.
+                  I can set up and customize WordPress websites using themes, plugins, and page builders. Ideal for blogs, business, or portfolio sites.
                 </p>
               </div>
 
@@ -400,7 +417,7 @@ export default function Portfolio() {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">SEO Optimization</h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  {/* Implementing search engine optimization strategies to improve visibility and organic traffic. */}                  
+                  {/* Implementing search engine optimization strategies to improve visibility and organic traffic. */}
                   In Progress....
                 </p>
               </div>
@@ -427,14 +444,21 @@ export default function Portfolio() {
                 <h3 className="text-xl font-bold mb-4">Portfolio</h3>
                 <p className="text-gray-400 mb-4">Creating beautiful digital experiences with modern web technologies.</p>
                 <div className="flex space-x-4">
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  {/* <a href="" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                     <TwitterIcon className='h-8 w-8' />
+                  </a> */}
+                  {/* if twitter in futute  */}
+                  <a 
+                  href="https://github.com/Aman-toad" 
+                  target="_blank"
+                  className="text-gray-400 hover:text-white transition-colors">
+                    <Github className='h-8 w-8' />
                   </a>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="https://www.linkedin.com/in/aman-singh-a00toad/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                     <span className="sr-only">GitHub</span>
                     <LinkedinIcon className='h-8 w-8' />
                   </a>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="https://www.instagram.com/console.log_aman/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                     <span className="sr-only">LinkedIn</span>
                     <InstagramIcon className='h-8 w-8' />
                   </a>
@@ -479,11 +503,7 @@ export default function Portfolio() {
                   </li>
                   <li className="flex items-start">
                     <Mail className='h-8 w-8 pr-1' />
-                    <span>amanfalse@email.com</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Phone className='h-8 w-8 pr-1' />
-                    <span>+91 971xxxxxxx</span>
+                    <span>amancrafts.dev@gmail.com</span>
                   </li>
                 </ul>
               </div>
