@@ -38,14 +38,14 @@ export default function ContactForm() {
             <div className="flex items-start space-x-3 mb-6">
               <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
               <div>
-                <p>00, ABC Nagar</p>
-                <p>1100-- Delhi</p>
+                <p>Delhi </p>
+                <p>India</p>
               </div>
             </div>
 
             <div className="flex items-center space-x-3 mb-6">
               <Mail className="w-5 h-5 flex-shrink-0" />
-              <p>amanfalse@email.com</p>
+              <p>amancrafts.dev@email.com</p>
             </div>
 
             <div className="flex items-center space-x-3 mb-6">
