@@ -8,7 +8,10 @@ import { useEffect, useState } from "react";
 import profile from './Assets/profile.jpg';
 import DistImage from './Assets/distance-img.jpg';
 import anisphere from './Assets/anisphere.png';
-import finance from './Assets/finance.png';
+import finance from './Assets/FinTrack.png';
+import space from './Assets/SolarScope.png';
+import community from './Assets/community.png'
+
 
 export default function Portfolio() {
   const storedTheme = localStorage.getItem("theme");
@@ -191,9 +194,7 @@ export default function Portfolio() {
                 <img
                   src={DistImage}
                   alt="About Me"
-                  width={500}
-                  height={600}
-                  className="rounded-lg shadow-lg w-full h-auto"
+                  className="rounded-lg shadow-lg w-90"
                 />
               </div>
               <div>
@@ -229,7 +230,7 @@ export default function Portfolio() {
                 <div className="gap-5 flex">
                   <button className="bg-sky-400 p-2 duration-300 ease-in hover:scale-105 transition-transform-colors rounded-xl">
                     <a
-                      href="/Aman_Resume.pdf"
+                      href="Public/Aman_Resume.pdf"
                       download="Aman_Resume.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -242,7 +243,7 @@ export default function Portfolio() {
 
                   <button className="bg-sky-400 p-2 duration-300 ease-in hover:scale-105 transition-transform-colors rounded-xl">
                     <a
-                      href="/Aman_Resume.pdf"
+                      href="Public/Aman_Resume.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-primary text-white font-medium rounded-md hover:bg-primary/90 flex items-center gap-1.5"
@@ -265,8 +266,89 @@ export default function Portfolio() {
               <div className="mt-4 h-1 w-24 bg-primary mx-auto bg-sky-400"></div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">           
+
               {/* Project 1 */}
+              <div className="content-up bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+                <div className="relative h-60">
+                  <img src={space} alt="Project 2" fill className="object-cover" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Space Weather App</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    A responsive web app that shows live space weather data using NASA's public APIs. It displays real-time info like solar flares, geomagnetic storms, and other space phenomena in a clean, user-friendly interface.It fetches data dynamically and updates the UI with the latest readings. The project highlights my skills in API integration, DOM manipulation.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
+                      HTML
+                    </span>
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
+                      CSS
+                    </span>
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
+                      JAVASCRIPT
+                    </span>
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
+                      API INTEGRATION
+                    </span>
+                  </div>
+                  <a href="https://aman-toad.github.io/space-weather-app/" target="_blank" className="text-primary hover:underline font-medium dark:text-white hover:text-sky-400 duration-300 ease-in hover:scale-105 transition-colors">
+                    View Project →
+                  </a>
+                </div>
+              </div>
+
+              {/* Project 2 */}
+              <div className="content-up bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+                <div className="relative h-60">
+                  <img src={community} alt="Project 2" fill className="object-cover" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">College Community</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    A fully responsive platform designed to connect students, share resources, and build a collaborative space within the college.  It includes features like notes sharing, syllabus access, teacher info, login system, and leaderboard. The clean UI and mobile-friendly layout ensure a smooth experience across devices. This project showcases my skills in frontend development, component structuring, and UI/UX design.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
+                      REACT
+                    </span>
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
+                      TAILWINDCSS
+                    </span>
+                  </div>
+                  <a href="https://aman-toad.github.io/Student-community-git/" target="_blank" className="text-primary hover:underline font-medium dark:text-white hover:text-sky-400 duration-300 ease-in hover:scale-105 transition-colors">
+                    View Project →
+                  </a>
+                </div>
+              </div>
+
+              {/* Project 3 */}
+              <div className="content-left bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+                <div className="relative h-60">
+                  <img src={finance} alt="Project 3" fill className="object-cover" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Finance Tracker</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">A clean and interactive web app to track income, expenses, and balance in real-time.It lets users add, delete, and view transactions, while also visualizing expense categories through a pie chart. Features like login simulation, clear all data, and a responsive design make it both functional and user-friendly. This project highlights my skills in data handling, localStorage, DOM manipulation, and data visualization.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
+                      HTML
+                    </span>
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
+                      JAVASCIPT
+                    </span>
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
+                      CHART.JS
+                    </span>
+                  </div>
+                  <a href="https://aman-toad.github.io/Finance-Tracker/" target="_blank" className="text-primary hover:underline font-medium dark:text-white hover:text-sky-400 duration-300 ease-in hover:scale-105 transition-colors">
+                    View Project →
+                  </a>
+                </div>
+              </div>
+
+              {/* Project 4 */}
               <div className="content-right bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
                 <div className="relative h-60">
                   <img src={anisphere} alt="Project 1" fill className="object-cover" />
@@ -287,58 +369,7 @@ export default function Portfolio() {
                       JAVASCRIPT
                     </span>
                   </div>
-                  <a href="https://aman-toad.github.io/Anime-Website/" className="text-primary hover:underline font-medium dark:text-white hover:text-sky-400 duration-300 ease-in hover:scale-105 transition-colors">
-                    View Project →
-                  </a>
-                </div>
-              </div>
-
-              {/* Project 2 */}
-              <div className="content-up bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
-                <div className="relative h-60">
-                  {/* <Image src="/placeholder.svg?height=400&width=600" alt="Project 2" fill className="object-cover" /> */}
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Portfolio Website</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    A creative portfolio showcasing my work with the Projects and contact
-                    form.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
-                      REACT
-                    </span>
-                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
-                      TAILWINDCSS
-                    </span>
-                  </div>
-                  <a href="#" className="text-primary hover:underline font-medium dark:text-white hover:text-sky-400 duration-300 ease-in hover:scale-105 transition-colors">
-                    View Project →
-                  </a>
-                </div>
-              </div>
-
-              {/* Project 3 */}
-              <div className="content-left bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
-                <div className="relative h-60">
-                  <img src={finance} alt="Project 3" fill className="object-cover" />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Finance Tracker</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">A simple and interactive web application to track income, expenses, and balance with visual charts for better financial management.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
-                      HTML
-                    </span>
-                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
-                      JAVASCIPT
-                    </span>
-                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
-                      CHART.JS
-                    </span>
-                  </div>
-                  <a href="https://aman-toad.github.io/Finance-Tracker/" className="text-primary hover:underline font-medium dark:text-white hover:text-sky-400 duration-300 ease-in hover:scale-105 transition-colors">
+                  <a href="https://aman-toad.github.io/Anime-Website/" target="_blank" className="text-primary hover:underline font-medium dark:text-white hover:text-sky-400 duration-300 ease-in hover:scale-105 transition-colors">
                     View Project →
                   </a>
                 </div>
