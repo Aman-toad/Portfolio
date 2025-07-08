@@ -12,6 +12,8 @@ import finance from './Assets/FinTrack.png';
 import space from './Assets/SolarScope.png';
 import community from './Assets/community.png'
 
+import pdfFile from './pdf/Aman_Resume.pdf'
+
 
 export default function Portfolio() {
   const storedTheme = localStorage.getItem("theme");
@@ -230,7 +232,7 @@ export default function Portfolio() {
                 <div className="gap-5 flex">
                   <button className="bg-sky-400 p-2 duration-300 ease-in hover:scale-105 transition-transform-colors rounded-xl">
                     <a
-                      href="Public/Aman_Resume.pdf"
+                      href={pdfFile}
                       download="Aman_Resume.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -243,7 +245,7 @@ export default function Portfolio() {
 
                   <button className="bg-sky-400 p-2 duration-300 ease-in hover:scale-105 transition-transform-colors rounded-xl">
                     <a
-                      href="Public/Aman_Resume.pdf"
+                      href={pdfFile}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-primary text-white font-medium rounded-md hover:bg-primary/90 flex items-center gap-1.5"
