@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Dark theme portfolio colors */
+  --background: hsl(0, 0%, 8%);
+  --foreground: hsl(0, 0%, 95%);
+
+  --card: hsl(0, 0%, 12%);
+  --card-foreground: hsl(0, 0%, 95%);
+
+  --primary: hsl(270, 91%, 65%);
+  --primary-foreground: hsl(0, 0%, 98%);
+
+  --secondary: hsl(0, 0%, 15%);
+  --secondary-foreground: hsl(0, 0%, 90%);
+
+  --accent: hsl(280, 100%, 70%);
+  --accent-foreground: hsl(0, 0%, 10%);
+
+  --muted: hsl(0, 0%, 20%);
+  --muted-foreground: hsl(0, 0%, 65%);
+
+  --border: hsl(0, 0%, 20%);
+  --input: hsl(0, 0%, 15%);
+  --ring: hsl(270, 91%, 65%);
+
+  /* Gradient colors for text effects */
+  --gradient-start: hsl(270, 91%, 65%);
+  --gradient-middle: hsl(300, 100%, 70%);
+  --gradient-end: hsl(350, 100%, 65%);
+
+  /* Animation variables */
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gradient text utilities */
+.gradient-text {
+  background: linear-gradient(to right,
+      var(--gradient-start),
+      var(--gradient-middle),
+      var(--gradient-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-alt {
+  background: linear-gradient(to right,
+      var(--gradient-end),
+      var(--gradient-start));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hover animations */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px hsla(270, 91%, 65%, 0.3);
+}
+
+/* Button variants */
+.btn-primary {
+  padding: 1rem 2rem;
+  background: linear-gradient(to right,
+      var(--gradient-start),
+      var(--gradient-end));
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px hsla(270, 91%, 65%, 0.5);
+}
+
+.btn-secondary {
+  padding: 1rem 2rem;
+  background: transparent;
+  border: 2px solid var(--gradient-start);
+  color: var(--gradient-start);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--gradient-start);
+  color: white;
+}
+
+/* Typography */
+.hero-title {
+  font-size: clamp(3rem, 6vw, 7rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  font-size: clamp(1.25rem, 3vw, 1.70rem);
+  color: var(--muted-foreground);
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+}

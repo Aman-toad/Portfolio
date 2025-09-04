@@ -1,121 +1,42 @@
-@import "tailwindcss";
-
-.left-animation-text {
-  animation: motion-left 0.8s ease-out forwards;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-.right-animation-text {
-  animation: motion-right 0.8s ease-out forwards;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes motion-right {
-  0% {
-    opacity: 0;
-    translate: 40px;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-
-  25% {
-    opacity: 0.25;
-    translate: 20px;
-  }
-
-  50% {
-    opacity: 0.5;
-    translate: 10px;
-  }
-
-  100% {
-    opacity: 1;
-    translate: 0px;
+  to {
+    transform: rotate(360deg);
   }
 }
 
-@keyframes motion-left {
-  0% {
-    opacity: 0;
-    translate: -40px;
-  }
-
-  25% {
-    opacity: 0.25;
-    translate: -20px;
-  }
-
-  50% {
-    opacity: 0.5;
-    translate: -10px;
-  }
-
-  100% {
-    opacity: 1;
-    translate: 0px;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
   }
 }
 
-@keyframes appear {
-  from{
-    opacity: 0;
-    scale: 0.5;
-  }
-  to{
-    opacity: 1;
-    scale: 1;
-  }
+.card {
+  padding: 2em;
 }
 
-@keyframes motioning-right {
-  from{
-    opacity: 0;
-    transform: translateX(-10%);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes motioning-left {
-  from{
-    opacity: 0;
-    transform: translateX(10%);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes motioning-up {
-  from{
-    opacity: 0;
-    scale: 0.6;
-  }
-  to{
-    opacity: 1;
-    scale: 1;
-  }
-}
-
-.heading{
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover;
-}
-
-.content-right{
-  animation: motioning-right linear;
-  animation-timeline: view();
-  animation-range: entry 0 ;
-}
-
-.content-left{
-  animation: motioning-left linear;
-  animation-timeline: view();
-  animation-range: entry 0 ;
-}
-
-.content-up{
-  animation: motioning-up linear;
-  animation-timeline: view();
-  animation-range: entry 0 ;
+.read-the-docs {
+  color: #888;
 }
