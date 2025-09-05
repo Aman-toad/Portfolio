@@ -37,6 +37,9 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body {
@@ -47,7 +50,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Gradient text utilities */
 .gradient-text {
   background: linear-gradient(to right,
       var(--gradient-start),
@@ -67,7 +69,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* Glass morphism effect */
 .glass {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
@@ -124,7 +125,6 @@ body {
   color: white;
 }
 
-/* Typography */
 .hero-title {
   font-size: clamp(3rem, 6vw, 7rem);
   font-weight: 900;
