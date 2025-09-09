@@ -58,25 +58,26 @@ const Skills = () => {
     <section id='skills' className="py-10 md:py-15 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <motion.p
+          {/* <motion.p
             className="text-primary font-semibold text-lg mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             TECH STACK
-          </motion.p>
+          </motion.p> */}
           <motion.h2
             className="section-title mb-8"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            TECHNOLOGIES THAT MAKE<br />
-            <span className="gradient-text">DEVELOPMENT</span><br />
-            <span className="gradient-text-alt">SEAMLESS</span>
+            <span className="gradient-text">TECH </span>
+            <span className="gradient-text-alt"> STACK</span>
           </motion.h2>
-          <motion.p
+
+          {/* unnecessary description removed */}
+          {/* <motion.p
             className="section-subtitle max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -84,7 +85,7 @@ const Skills = () => {
           >
             My toolkit spans the entire development ecosystem. From crafting responsive frontends
             to architecting scalable backends, I work with technologies that deliver results.
-          </motion.p>
+          </motion.p> */}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -121,7 +122,7 @@ const Skills = () => {
                     {/* Badge itself */}
                     <div className="relative bg-gray-800 backdrop-blur-sm rounded-xl w-16 h-16 flex items-center justify-center border border-gray-600/30 hover:border-gray-500/50 transition-all duration-300">
                       <span className="text-3xl filter drop-shadow-lg text-white">
-                        <img src={skill.icon} alt="badge" />
+                        <img loading='lazy' src={skill.icon} alt="badge" />
                       </span>
                     </div>
                   </motion.div>

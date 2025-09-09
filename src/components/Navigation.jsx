@@ -6,7 +6,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', path: '#home' },
-    { name: 'About', path: '#about' },
+    // { name: 'About', path: '#about' },
     { name: 'Skills', path: '#skills' },
     { name: 'Projects', path: '#projects' },
     { name: 'Contact', path: '#contact' },
@@ -24,7 +24,7 @@ const Navigation = () => {
           {/* Logo */}
           <motion.a 
             href="#home"
-            className="text-2xl font-bold gradient-text cursor-pointer"
+            className="text-2xl font-bold gradient-text cursor-none"
             whileHover={{ scale: 1.05 }}
           >
             AS
@@ -36,7 +36,7 @@ const Navigation = () => {
               <motion.a
                 key={item.path}
                 href={item.path}
-                className="text-lg font-medium transition-colors text-foreground hover:text-primary relative"
+                className="text-lg font-medium transition-colors text-foreground hover:text-primary relative cursor-none"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

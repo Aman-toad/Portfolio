@@ -64,7 +64,7 @@ const Contact = () => {
     {
       icon: <LinkedinIcon />,
       title: "LinkedIn",
-      value: "aman-singh-a00toad",
+      value: "amancrafts-dev",
       description: "Let's connect professionally"
     },
     {
@@ -81,14 +81,14 @@ const Contact = () => {
         <section id='contact' className="py-10 md:py-15 px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <motion.p
+              {/* <motion.p
                 className="text-primary font-semibold text-lg mb-4"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
               >
                 GET IN TOUCH
-              </motion.p>
+              </motion.p> */}
               <motion.h2
                 className="section-title mb-8"
                 initial={{ opacity: 0, y: 30 }}
@@ -96,10 +96,10 @@ const Contact = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 LET'S BUILD SOMETHING<br />
-                <span className="gradient-text">AMAZING</span><br />
+                <span className="gradient-text">AMAZING </span>
                 <span className="gradient-text-alt">TOGETHER</span>
               </motion.h2>
-              <motion.p
+              {/* <motion.p
                 className="section-subtitle max-w-2xl mx-auto"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -107,7 +107,7 @@ const Contact = () => {
               >
                 Have a project in mind? Need a technical consultation? Or just want to say hi?
                 I'm always excited to discuss new opportunities.
-              </motion.p>
+              </motion.p> */}
             </div>
 
             <div className="grid md:grid-cols-2 gap-12">

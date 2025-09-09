@@ -6,7 +6,7 @@ const Footer = () => {
 
   const socialLinks = [
     { name: 'GitHub', icon: <GithubIcon/>, url: 'https://github.com/Aman-toad/' },
-    { name: 'LinkedIn', icon: <LinkedinIcon/>, url: 'https://www.linkedin.com/in/aman-singh-a00toad/' },
+    { name: 'LinkedIn', icon: <LinkedinIcon/>, url: 'https://www.linkedin.com/in/amancrafts-dev/' },
     { name: 'Instagram', icon: <InstagramIcon/>, url: 'https://instagram.com/console.log_aman' }
   ];
 

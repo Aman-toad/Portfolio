@@ -36,7 +36,7 @@ const Hero = () => {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.2, delay: 0.4 }}
           >
-            BUILT BY{' '}
+            Aman{' '}
             <motion.span
               className="gradient-text-alt"
               animate={{
@@ -48,13 +48,11 @@ const Hero = () => {
                 ease: 'linear',
               }}
             >
-              PASSION
+              Singh
             </motion.span>
-            , FOR{' '}
-            <motion.span className="gradient-text">INNOVATION</motion.span>
           </motion.h1>
 
-          <motion.p
+          {/* <motion.p
             className="section-subtitle mb-12 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -63,17 +61,19 @@ const Hero = () => {
             I'm not just a developer, I'm a digital architect crafting experiences that matter.
             With expertise spanning frontend magic to backend wizardry, I build solutions that
             bridge the gap between imagination and reality.
-          </motion.p>
+          </motion.p> */}
+
+          {/* we'll see this wheater to use or not */}
 
           <motion.div
-            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-20"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.8 }}
           >
             <a href="#projects">
               <motion.button
-                className="btn-primary"
+                className="btn-primary cursor-none"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -82,7 +82,7 @@ const Hero = () => {
             </a>
             <a href="#contact">
               <motion.button
-                className="btn-secondary"
+                className="btn-secondary cursor-none"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
