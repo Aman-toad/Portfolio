@@ -100,17 +100,11 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2, duration: 0.8 }}
       >
-        <motion.div
-          className="w-6 h-10 border-2 border-primary rounded-full flex justify-center"
-          animate={{ opacity: [1, 0.3, 1] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
           <motion.div
             className="w-1 h-3 bg-primary rounded-full mt-2"
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
           />
-        </motion.div>
       </motion.div>
     </section>
   );
