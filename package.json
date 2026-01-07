@@ -20,9 +20,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.4.0",
-    "react-snowfall": "^2.4.0",
     "react-toastify": "^11.0.5",
-    "react-xmas-tree": "^1.1.1",
     "tailwindcss": "^4.0.17"
   },
   "devDependencies": {
