@@ -1,14 +1,48 @@
 import { motion } from 'framer-motion';
-import ainotes from '../Assets/projects/ainotes.png'
-import solar from '../Assets/projects/solarScope.png'
-import fintrack from '../Assets/projects/FinTrack.png'
+import node from '../Assets/projects/nodegen-x.png'
 import xyphora from '../Assets/projects/community.png'
+import hyper from '../Assets/projects/hyper.png'
+import ainotes from '../Assets/projects/ainotes.png'
 
 const Projects = () => {
 
   const projects = [
     {
       id: 1,
+      title: "NodeGen-x - Visual AI Image Genaration",
+      category: "Full-Stack",
+      description: "A node-based AI scene builder that lets you visually construct prompts using a graph system and generate images with AI models. Build structured prompts instead of messy text and generate reproducible outputs.",
+      technologies: ["Next.js", "React Flow", "TailwindCSS", "PostgreSQL", "NextAUTH", "Cloudinary", "Neon"],
+      image: node,
+      liveUrl: "https://node-gen-x.vercel.app",
+      codeUrl: "https://github.com/Aman-toad/NodeGen-X",
+      status: "Live",
+      highlights: [
+        "Node-based AI prompt engineering system (no more messy text prompts)",
+        "Build complex scenes using visual graphs instead of linear input",
+        "Deterministic prompt generation with full reproducibility",
+        "Reusable preset system with version control (like Git for prompts)",
+         "Real-time prompt compilation from interconnected nodes",
+      ]
+    },
+    {
+      id: 2,
+      title: "Hyper Light Breaker - A Gaming Website",
+      category: "Frontend",
+      description: "A high-performance, cinematic gaming website built with React and GSAP. This project pushes modern frontend development beyond conventional UI by implementing 2.5D parallax, scroll-linked storytelling, and hardware-accelerated interactions.",
+      technologies: ["React", "GSAP", "Tailwind CSS"],
+      image: hyper,
+      liveUrl: "https://dash-liart-five.vercel.app",
+      codeUrl: "https://github.com/Aman-toad/IndieGaming",
+      status: "Live",
+      highlights: [
+        "Cinematic Hero Transition - Dynamic Video Masking, 3D Perspective Shifting",
+        "Interactive Armory - Mouse-Follow Glow Effect, Staggered Scroll Orchestration",
+        "Procedural Bestiary - Sticky Scroll Viewing Chamber, Atmospheric Rendering Effects",
+      ]
+    },
+    {
+      id: 3,
       title: "InscribeAI- AI-Notes App",
       category: "Full-Stack",
       description: "A complete AI Notes solution with Next.js for both frontend and backend, and Mongoose database. Features include user authentication, Notes Saving, and real-time AI Suggestions.",
@@ -25,7 +59,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 2,
+      id: 4,
       title: "Community Hub - Student Portal",
       category: "Full-Stack",
       description: "A collaborative student community platform for sharing resources, posting updates, and connecting with peers. Designed to improve communication and collaboration within college communities.",
@@ -40,41 +74,6 @@ const Projects = () => {
         "Event posting and notifications",
         "Modern responsive UI with Tailwind CSS",
       ]
-    },
-    {
-      id: 3,
-      title: "Space Weather App",
-      category: "Frontend",
-      description: "A live API-based app that displays solar activity, geomagnetic storms, and space weather data.",
-      technologies: ["HTML", "CSS", "JavaScript", "NASA API"],
-      image: solar,
-      liveUrl: "https://aman-toad.github.io/space-weather-app/",
-      codeUrl: "https://github.com/Aman-toad/space-weather-app",
-      status: "Live",
-      highlights: [
-        "Real-time NASA API data",
-        "Interactive space weather updates",
-        "Mobile-friendly interface",
-        "Fast rendering with React",
-      ]
-    },
-    {
-      id: 4,
-      title: "Finance Tracker App",
-      category: "Frontend",
-      description:
-        "A personal finance tracker with income/expense management and data visualization using Chart.js.",
-      technologies: ["HTMl", "Chart.js", "CSS", "Javasript", "Local Storage"],
-      image: fintrack,
-      liveUrl: "https://aman-toad.github.io/Finance-Tracker/",
-      codeUrl: "https://github.com/Aman-toad/Finance-Tracker",
-      status: "Live",
-      highlights: [
-        "Interactive pie chart visualization",
-        "User-friendly dashboard",
-        "Secure data storage",
-        "Responsive design",
-      ],
     }
   ];
 
@@ -139,8 +138,8 @@ const Projects = () => {
                     <h3 className="text-xl font-bold text-white">{project.title}</h3>
                     <span
                       className={`px-2 py-1 rounded-full text-xs font-semibold flex-shrink-0 ${project.status === "Live"
-                          ? "bg-green-500/20 text-green-400 border border-green-500/30"
-                          : "bg-yellow-500/20 text-yellow-400 border border-yellow-500/30"
+                        ? "bg-green-500/20 text-green-400 border border-green-500/30"
+                        : "bg-yellow-500/20 text-yellow-400 border border-yellow-500/30"
                         }`}
                     >
                       {project.status}
