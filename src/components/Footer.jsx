@@ -55,9 +55,6 @@ const Footer = () => {
           <p className="text-muted-foreground">
             © {currentYear} Aman Singh. All rights reserved.
           </p>
-          <p className="text-muted-foreground mt-4 md:mt-0">
-            Built with ❤️ using React & Tailwind CSS
-          </p>
         </div>
       </div>
     </motion.footer>

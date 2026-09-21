@@ -19,16 +19,16 @@
   --accent-foreground: hsl(0, 0%, 10%);
 
   --muted: hsl(0, 0%, 20%);
-  --muted-foreground: hsl(0, 0%, 65%);
+  --muted-foreground: hsl(221, 99%, 27%);
 
   --border: hsl(0, 0%, 20%);
   --input: hsl(0, 0%, 15%);
   --ring: hsl(270, 91%, 65%);
 
   /* Gradient colors for text effects */
-  --gradient-start: hsl(270, 91%, 65%);
-  --gradient-middle: hsl(300, 100%, 70%);
-  --gradient-end: hsl(350, 100%, 65%);
+  --gradient-start: hsl(270, 100%, 100%);
+  --gradient-middle: hsl(0, 0%, 45%);
+  --gradient-end: hsl(0, 0%, 15%);
 
   /* Animation variables */
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

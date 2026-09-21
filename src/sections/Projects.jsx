@@ -1,14 +1,34 @@
 import { motion } from 'framer-motion';
 import node from '../Assets/projects/nodegen-x.png'
-import xyphora from '../Assets/projects/community.png'
+// import xyphora from '../Assets/projects/community.png'
 import hyper from '../Assets/projects/hyper.png'
 import ainotes from '../Assets/projects/ainotes.png'
+import erp from '../Assets/projects/erp.png'
 
 const Projects = () => {
 
   const projects = [
     {
       id: 1,
+      title: "ERP - PGDAV College",
+      category: "Full-Stack",
+      description: "A full-stack Enterprise Resource Planning platform developed for PGDAV College to centralize and automate academic and administrative workflows across students, faculty, nodal officers, and administrators.",
+      technologies: ["React", "Tailwind CSS", "Node.js", "Express.js", "Prisma", "MySQL", "JWT"],
+      image: erp,
+      liveUrl: "https://pgdaverp.in",
+      codeUrl: "#",
+      status: "Live",
+      highlights: [
+        "Role-based ERP architecture supporting students, faculty, nodal officers, and administrators",
+        "Automated attendance, assessment, course allocation, and academic record management",
+        "Secure authentication with role-specific access control and protected workflows",
+        "Administrative dashboards with real-time academic and operational insights",
+        "Built-in notifications, OTP-based password recovery, and audit logging",
+        "Designed for real-world college deployment with scalable backend and database architecture",
+      ]
+    },
+    {
+      id: 2,
       title: "NodeGen-x - Visual AI Image Genaration",
       category: "Full-Stack",
       description: "A node-based AI scene builder that lets you visually construct prompts using a graph system and generate images with AI models. Build structured prompts instead of messy text and generate reproducible outputs.",
@@ -22,11 +42,11 @@ const Projects = () => {
         "Build complex scenes using visual graphs instead of linear input",
         "Deterministic prompt generation with full reproducibility",
         "Reusable preset system with version control (like Git for prompts)",
-         "Real-time prompt compilation from interconnected nodes",
+        "Real-time prompt compilation from interconnected nodes",
       ]
     },
     {
-      id: 2,
+      id: 3,
       title: "Hyper Light Breaker - A Gaming Website",
       category: "Frontend",
       description: "A high-performance, cinematic gaming website built with React and GSAP. This project pushes modern frontend development beyond conventional UI by implementing 2.5D parallax, scroll-linked storytelling, and hardware-accelerated interactions.",
@@ -42,7 +62,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 3,
+      id: 4,
       title: "InscribeAI- AI-Notes App",
       category: "Full-Stack",
       description: "A complete AI Notes solution with Next.js for both frontend and backend, and Mongoose database. Features include user authentication, Notes Saving, and real-time AI Suggestions.",
@@ -58,23 +78,23 @@ const Projects = () => {
         "Deployed on Vercel for scalability",
       ]
     },
-    {
-      id: 4,
-      title: "Community Hub - Student Portal",
-      category: "Full-Stack",
-      description: "A collaborative student community platform for sharing resources, posting updates, and connecting with peers. Designed to improve communication and collaboration within college communities.",
-      technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-      image: xyphora,
-      liveUrl: "https://aman-toad.github.io/Student-community-git/",
-      codeUrl: "https://github.com/Aman-toad/Student-community-git",
-      status: "In Development",
-      highlights: [
-        "User authentication and role-based access",
-        "Discussion forums and resource sharing",
-        "Event posting and notifications",
-        "Modern responsive UI with Tailwind CSS",
-      ]
-    }
+    // {
+    //   id: 4,
+    //   title: "Community Hub - Student Portal",
+    //   category: "Full-Stack",
+    //   description: "A collaborative student community platform for sharing resources, posting updates, and connecting with peers. Designed to improve communication and collaboration within college communities.",
+    //   technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    //   image: xyphora,
+    //   liveUrl: "https://aman-toad.github.io/Student-community-git/",
+    //   codeUrl: "https://github.com/Aman-toad/Student-community-git",
+    //   status: "In Development",
+    //   highlights: [
+    //     "User authentication and role-based access",
+    //     "Discussion forums and resource sharing",
+    //     "Event posting and notifications",
+    //     "Modern responsive UI with Tailwind CSS",
+    //   ]
+    // }
   ];
 
   return (
